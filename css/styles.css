@@ -475,8 +475,8 @@ p {
 }
 
 .section-heading {
-  font-weight: 700px;
-  font-style: 36px;
+  font-weight: 700;
+  font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -489,7 +489,7 @@ p {
 }
 
 .section-text {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -743,5 +743,169 @@ p {
   .portfolio-list:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
       0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  }
+}
+
+/* footer  */
+
+.footer {
+  background-color: #2e2f42;
+  padding: 96px 0;
+}
+
+.container.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-logo-accent {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  margin-top: 16px;
+  text-align: left;
+}
+
+.footer-social-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.footer-list-social {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-item .social-link:hover,
+.footer-social-item .social-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.email-input {
+  min-width: 288px;
+  height: 40px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  opacity: 0.3;
+  color: #fff;
+  outline: transparent;
+}
+
+.email-input::placeholder {
+  color: #fff;
+}
+
+.email-input:focus {
+  border-color: #31d0aa;
+}
+
+.subscribe-btn {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: #31d0aa;
+}
+
+.icon-airplane {
+  fill: #fff;
+  margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .container.footer-list {
+    padding: 0 108px;
+    align-items: start;
+    justify-content: start;
+    gap: 72px 24px;
+  }
+
+  .footer-logo {
+    margin-bottom: 16px;
+    text-align: left;
+  }
+
+  .footer-text {
+    max-width: 264px;
+  }
+
+  .footer-social-text {
+    text-align: left;
+  }
+
+  .email-input {
+    min-width: 264px;
+  }
+
+  .footer-form {
+    text-align: left;
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+
+  .container.footer-list {
+    padding: 0 15px;
+    align-items: baseline;
+    gap: 0;
+  }
+
+  .footer-item {
+    margin-right: 120px;
+  }
+
+  .footer-form-item {
+    margin-left: auto;
   }
 }
